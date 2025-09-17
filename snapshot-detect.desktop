@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Snapshot Detect
-Icon=timeshift
+Icon=hwinfo
 Exec=/usr/bin/snapshot-detect
 Terminal=false
 Type=Application
