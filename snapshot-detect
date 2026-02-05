@@ -1,4 +1,9 @@
 #!/bin/bash
+if grep -q .snapshot /proc/cmdline; then
+notify-send -u critical -i btrfs-assistant-launcher --app-name Btrfs-Snpshot 'RW Btrfs Snapshot Detected!' 'Booted into a RW Btrfs Snapshot. Please restore the snapshot now or reboot.'
+exit 0
+fi
+
 if grep -q timeshift /proc/cmdline; then
 notify-send -u critical -i timeshift --app-name Timeshift 'Snapshot Detected!' 'Booted into a Timeshift Snapshot. You can run "timeshift-launcher" to restore the snapshot.'
 exit 0
