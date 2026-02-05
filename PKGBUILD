@@ -1,7 +1,7 @@
 # bkmo original
 
 pkgname=snapshot-detect
-pkgver=1.0
+pkgver=1.1
 pkgrel=1
 pkgdesc="Notify when booted into btrfs snapshot"
 arch=('any')
